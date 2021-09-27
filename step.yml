@@ -43,7 +43,6 @@ inputs:
       is_sensitive: true
       is_expand: true
       is_required: true
-      value_options: []
 
   - app_slug: "$BITRISE_APP_SLUG"
     opts:
@@ -53,7 +52,6 @@ inputs:
         Name of the artifact to pull
       is_expand: true
       is_required: true
-      value_options: []
 
   - artifact_file: "$ARTIFACT_FILE"
     opts:
@@ -64,7 +62,6 @@ inputs:
       is_sensitive: false
       is_expand: true
       is_required: true
-      value_options: []
 
   - download_dir: artifacts
     opts:
@@ -75,7 +72,6 @@ inputs:
         Subdirectory of `$BITRISE_SOURCE_DIR`
       is_expand: true
       is_required: true
-      value_options: []
 
   - source_build_slug: "$SOURCE_BUILD_SLUG"
     opts:
@@ -83,7 +79,6 @@ inputs:
       summary: "The build slug for the source build from which to copy the artifact"
       description: |
         The build slug for the source build from which to copy the artifact
-      is_sensitive: true
+      is_sensitive: false
       is_expand: true
       is_required: true
-      value_options: []
