@@ -29,6 +29,7 @@ output_state()
     info "artifact_file: $artifact_file"
     info "download_dir: $download_dir"
     info "app_slug: $app_slug"
+    info "source_build_slug: $source_build_slug"
 }
 
 

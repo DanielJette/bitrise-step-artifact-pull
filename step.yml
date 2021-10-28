@@ -46,19 +46,19 @@ inputs:
 
   - app_slug: "$BITRISE_APP_SLUG"
     opts:
-      title: "Name of the artifact to pull"
-      summary: "Name of the artifact to pull"
+      title: "The app for the project"
+      summary: "The app for the project"
       description: |
-        Name of the artifact to pull
+        The app for the project. Defaults to BITRISE_APP_SLUG
       is_expand: true
       is_required: true
 
   - artifact_file: "$ARTIFACT_FILE"
     opts:
-      title: "The build slug for the source build from which to copy the artifact"
-      summary: "The build slug for the source build from which to copy the artifact"
+      title: "Name of the artifact to pull"
+      summary: "Name of the artifact to pull"
       description: |
-        The build slug for the source build from which to copy the artifact
+        Name of the artifact to pull. Defaults to ARTIFACT_FILE
       is_sensitive: false
       is_expand: true
       is_required: true
@@ -78,7 +78,8 @@ inputs:
       title: "The build slug for the source build from which to copy the artifact"
       summary: "The build slug for the source build from which to copy the artifact"
       description: |
-        The build slug for the source build from which to copy the artifact
+        The build slug for the source build from which to copy the artifact.
+        Defaults to SOURCE_BUILD_SLUG
       is_sensitive: false
       is_expand: true
       is_required: true
